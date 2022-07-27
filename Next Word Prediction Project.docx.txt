@@ -1,0 +1,10 @@
+﻿Next Word Prediction :-
+1. Pre-processing the Dataset
+2. Tokenization
+3. Creating the Model
+4. Model Summary
+5. Compile and Fit
+We can’t just pass text in our model that’s why we are passing unique integer number that represent that particular text
+I used the first 25 words as features(x) and then 26th word as a label(y), in corpus of pre-processed text.
+I've used a basic LSTM based neural network with 250 batch size and run the model for 350 epochs
+Lesser the batch size more is the time taken by model to train , for 25538 data points  I have taken 250 batch size that means for one epochs I need to take 102.15 of total batch for covering whole dataset, loss is minimizing and accuracy is maximizing.
